@@ -9,6 +9,6 @@ public interface ParkingSpotDao {
     void remove(int number);
     Collection<ParkingSpot> findAll();
     Collection<ParkingSpot> findByAreaNumber(int areaCode);
-    boolean occupy();
-    boolean vacate();
+    void occupy();
+    void vacate();
 }
